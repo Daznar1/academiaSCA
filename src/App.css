@@ -1,0 +1,115 @@
+*{
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  color: white;
+  font-family: 'Unbounded', 'inter', sans-serif;
+}
+
+.content {
+  height: 100svh;
+  position: relative;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 28px;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+input{
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  font-size: 17px;
+  padding: 0.7rem 4rem 0.7rem 0rem;
+  color: white;
+}
+
+input::placeholder{
+  color: white;
+  opacity: 0.7;
+}
+
+button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+form{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2rem;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.marqueeStyles{
+  background-color: rgba(255, 255, 255, 0.871);
+  color: black;
+  width: 100%;
+}
+
+.marqueeStyles p{
+  font-weight: 600;
+  font-size: 17px;
+  margin: 25px 50px;
+  color: black !important;
+  width: fit-content;
+}
+
+.iconImg{
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
